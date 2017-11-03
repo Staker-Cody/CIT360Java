@@ -17,8 +17,8 @@ public class Controller {
 
 
         hashOfUser.put("Cody", new usercody());
-        hashOfUser.put("Cody", new userowen());
-        hashOfUser.put("Cody", new useremily());
+        hashOfUser.put("Owen", new userowen());
+        hashOfUser.put("Emily", new useremily());
 
 
 
