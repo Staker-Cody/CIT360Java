@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Threads;
 import java.util.*;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
@@ -10,7 +10,7 @@ public class isPrime {
 
         Executor executor = Executors.newCachedThreadPool();
         executor.execute(new checkIsPrime(21325));
-        executor.execute(new checkIsPrime(21321581));
+        executor.execute(new checkIsPrime(21321));
         executor.execute(new checkIsPrime(54684));
         executor.execute(new checkIsPrime(213215));
 

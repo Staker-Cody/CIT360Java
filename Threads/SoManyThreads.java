@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Threads;
 import java.util.concurrent.*;
 
 public class SoManyThreads  {

@@ -1,5 +1,4 @@
-package com.company;
-import java.util.*;
+package com.company.Threads;
 
 class RunnableDemo implements Runnable {
     private Thread t;
