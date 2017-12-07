@@ -1,43 +1,60 @@
 package com.company.hibernate;
 
-import java.io.Serializable;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
-public class Employee implements Serializable {
-    private Integer id;
-    private String name;
-    private Integer mobile;
-    private String email;
-    public Employee(){}
+@Entity
+@Table(name="employee")
+public class Employee{
+    @Id
+    @Column(name="id")
+    private int id;
 
-    public Integer getId() {
-        return id;
-    }
+    @Column(name="ename")
+    private String ename;
 
-    public void setId(Integer id) {
+
+    @Column(name ="mobile")
+    private int mobile;
+
+    public Employee(int id, String ename, int mobile) {
         this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public Integer getMobile() {
-        return mobile;
-    }
-
-    public void setMobile(Integer mobile) {
+        this.ename = ename;
         this.mobile = mobile;
     }
 
-    public String getEmail() {
-        return email;
+    public int getId() {
+        return id;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getEname() {
+        return ename;
+    }
+
+    public void setEname(String ename) {
+        this.ename = ename;
+    }
+
+    public int getMobile() {
+        return mobile;
+    }
+
+    public void setMobile(int mobile) {
+        this.mobile = mobile;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", ename='" + ename + '\'' +
+                ", mobile=" + mobile +
+                '}';
     }
 }
