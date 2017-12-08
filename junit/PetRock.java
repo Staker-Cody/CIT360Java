@@ -25,6 +25,7 @@ public class PetRock {
     }
 
 
+    
 
    public boolean isHappy(){
         return happy;
